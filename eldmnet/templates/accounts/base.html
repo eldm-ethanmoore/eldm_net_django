@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>eldm.net</title>
+        <link href="{% static "css/jquery-ui.css" %}" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/glitch-slap" rel="stylesheet">
+    </head>
+    <style>
+        body {
+            background: #00171c;
+            font-family: 'Glitch Slap', sans-serif;
+        } 
+    </style>
+    <body>
+        <h1 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons">
+            eldm.net
+        </h1>
+        <div class="ui-tabs ui-corner-all ui-widget ui-widget-content">
+            <ul class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header">
+                <li class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active">
+                    <a href="{% url 'accounts:index' %}" class="ui-tabs-anchor">Home</a>
+                </li>
+                <li class="ui-tabs-tab ui-corner-top ui-state-default ui-tab">
+                    <a class="ui-tabs-anchor">Login</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
