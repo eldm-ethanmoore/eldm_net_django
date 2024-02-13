@@ -3,5 +3,3 @@
 ## virtual_env
 .\django-eldmnet\Scripts\activate
 exit
-
-p. 86
